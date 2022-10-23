@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<Conexao>
-    (options => options.UseSqlServer(""));
+    (options => options.UseSqlServer("Data Source=DESKTOP-TSST6LS\\SQLEXPRESS;Initial Catalog=PontoTuristico_CRUD_SQL;Persist Security Info=True;User ID=sa;Password=abc123"));
 
 var app = builder.Build();
 

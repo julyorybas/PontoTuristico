@@ -5,7 +5,7 @@ namespace CRUDPontoTuristico.Context
 {
     public class Conexao : DbContext
     {
-        public Conexao(DbContextOptions<DbContext> options) : base(options)
+        public Conexao(DbContextOptions<Conexao> options) : base(options)
         {
             
         }
